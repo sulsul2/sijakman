@@ -11,6 +11,8 @@ class DataPop extends Model
 
     protected $table = 'pop';
 
+    protected $primaryKey = "POPID";
+
     protected $guarded = [
         'timestamp',
     ];

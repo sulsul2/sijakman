@@ -58,7 +58,8 @@ class DataPopController extends Controller
         $request->validate([
             'pop_kode' => 'required'
         ]);
-        $data_pop = DataPop::where('POPID',$request->pop_kode)->first();
+        $data_pop = DataPop::find($request->pop_kode);
+        // $data_pop = DataPop::where('POPID',$request->pop_kode)->first();
         $data_pop->update([
             'POPName' => $request->nama,
             'POPCoordinat' => $request->koordinat,
