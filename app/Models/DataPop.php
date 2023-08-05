@@ -12,6 +12,8 @@ class DataPop extends Model
     protected $table = 'pop';
 
     protected $guarded = [
-        'timestamp'
+        'timestamp',
     ];
+
+    public $timestamps = false;
 }
