@@ -21,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('pop',[DataPopController::class,'all']);
 Route::post('pop',[DataPopController::class,'add']);
+Route::post('edit-pop',[DataPopController::class,'update']);
